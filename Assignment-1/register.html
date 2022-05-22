@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ions Icon link -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Linking external font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Open+Sans:wght@300;400;500&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Linking About CSS style sheet -->
+    <link rel="stylesheet" href="about.css">
+
+    <!-- Linking Register CSS style sheet -->
+    <link rel="stylesheet" href="register.css">
+
+    <title>Register Page</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-items">
+            <ul>
+                <li class="nav-item"><a href="index.html" >About Me</a></li>
+                <li class="nav-item"><a href="contact.html" >Contact</a></li>
+                <li class="nav-item"><a href="register.html" >Register</a></li>
+                <li class="nav-item active"><a href="login.html" >Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-register">
+        <section class="register">
+            <h2 class="register__heading">
+                Basic Details
+            </h2>
+            <div class="register-wrapper">
+                <!-- First Flex container -->
+                <div class="register-wrapper__column-one">
+                    <form action="" class="register-form">
+                        <!-- 1st Input -->
+                        <label for="firstName" class="register-form__label">First Name</label>
+                        <input type="text" class="register-form__input" placeholder="Joshua" required>
+
+                        <!-- 2nd Input -->
+                        <label for="phoneNumber" class="register-form__label">Phone no.</label>
+                        <input type="phone" class="register-form__input" placeholder="+234" required>
+
+                        <!-- 3rd Input -->
+                        <label for="country" class="register-form__label">Country</label>
+                        <input type="text" class="register-form__input" placeholder="Enter your country" required>
+
+                        <!-- 4th Input -->
+                        <label for="password" class="register-form__label">Password</label>
+                        <input type="password" class="register-form__input" placeholder="Enter password" required>
+                    </form>
+                </div>
+
+                <!-- Second Flex Container -->
+                <div class="register-wrapper__column-two">
+                    <form action="" class="register-form">
+                        <!-- 1st Input -->
+                        <label for="lastName" class="register-form__label">Last Name</label>
+                        <input type="text" class="register-form__input" placeholder="Abel" required>
+
+                        <!-- 2nd Input -->
+                        <label for="username" class="register-form__label">Username</label>
+                        <input type="text" class="register-form__input" placeholder="eg: josh_abel" required>
+
+                        <!-- 3rd Input -->
+                        <div class="register-form__sub">
+                            <div class="register-form__sub-1">
+                                <label for="state" class="register-form__label">State/Province</label>
+                                <input type="text" class="register-form__input" placeholder="Kogi" required>
+                            </div>
+
+                            <!-- Gender select form -->
+                            <div class="register-form__sub-2">
+                                <label for="gender" class="register-form__label">Gender</label>
+                                <select name="gender" id="select-gender" class="select-gender">
+                                    <option value="Male" selected>Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="non-binary">Non-binary</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- 4th Input -->
+                        <label for="password" class="register-form__label">Confirm password</label>
+                        <input type="password" class="register-form__input" placeholder="Confirm password" required>
+                    </form>
+                </div>
+            </div>
+            <div class="register-footer">
+                <button type="reset" class="register-footer__btn">Reset All</button>
+                <button type="submit" class="register-footer__btn--active">Continue</button>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

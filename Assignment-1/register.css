@@ -1,0 +1,132 @@
+.main-register {
+    padding: 0;
+    margin: 3rem;
+}
+/* ############## */
+/* Section Register */
+/* ############### */
+
+.register {
+    width: 1000px;
+    padding: 3rem;
+    margin: 0 auto;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.register__heading {
+    color: var(--heading-span-color);
+    font-size: 1.8rem;
+}
+
+.register-wrapper {
+    display: flex;
+}
+
+.register-wrapper__column-one,
+.register-wrapper__column-two {
+    width: 100%;
+}
+
+.register-wrapper__column-one {
+    margin-right: 2.5rem;
+}
+
+.register-form__sub {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-form {
+    padding: 3rem 0;
+}
+
+.register-form__label {
+    display: block;
+    color: var(--heading-span-color-dark)
+}
+
+.register-form__input {
+    display: inline-block;
+    width: 100%;
+    background-color: transparent;
+    padding: .5rem 0;
+    border: none;
+    border-bottom: 1px solid var(--heading-span-color);
+    
+
+    margin-bottom: 1.8rem;
+    transition: all .2s ease;
+}
+
+.register-form__input:focus {
+    outline: none;
+    border-bottom-width: 2px;
+}
+
+.register-form__input::placeholder {
+    font-size: 1.1rem;
+    /* font-style: italic; */
+}
+
+.select-gender {
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid var(--heading-span-color);
+    font-size: 1rem;
+    color: inherit;
+    background-color: transparent;
+}
+
+.select-gender:focus {
+    outline: none;
+    border-bottom-width: 1.5px;
+}
+
+.register-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-footer__btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: .9rem;
+    color: inherit;
+    font-weight: 700;
+    transition: all .2s ease;
+}
+
+.register-footer__btn:hover {
+    color:rgb(65, 65, 66)
+}
+
+.register-footer__btn--active {
+    display: block;
+    padding: .6rem 1.5rem;
+    border-radius: 100px;
+    background-color: var(--heading-span-color);
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 700;
+    border: none;
+    transition: all .2s ease;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
+}
+
+.register-footer__btn--active:hover {
+    background-color: var(--heading-span-color-dark);
+}
+
+.register-footer__btn:focus,
+.register-footer__btn--active:focus {
+    outline: none;
+}
+
+.register-footer__btn,
+.register-footer__btn--active {
+    cursor: pointer;
+}

@@ -1,0 +1,67 @@
+/* ############### */
+/* Contact-Section */
+/* ############### */
+.contact {
+    margin: 0 auto;
+    /* Temporal */
+    width: 570px;
+    /* height: 350px; */
+    /* background-color: orange; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+
+    padding: 3rem 2.5rem 1rem;
+}
+
+.contact__input {
+    display: block;
+    width: 100%;
+    padding: .8rem .8rem;
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    background-color: transparent;
+}
+
+.contact__input::placeholder {
+    font-size: 1.1rem;
+}
+
+.contact__input:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.contact__input:focus {
+    outline: 1px solid var(--heading-span-color);
+}
+
+label {
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.contact__btn {
+    
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.contact__input-btn {
+    display: inline-block;
+    padding: .8rem 1.2rem;
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    font-size: 1.1rem;
+    color: var(--nav-link-color);
+    border: 1px solid var(--nav-link-color);
+    border-radius: 5px;
+
+    background-color: transparent;
+
+    margin-top: 2rem;
+    cursor: pointer;
+}

@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-link-color: rgb(23, 19, 76);
+    --primary-heading-color: rgb(24, 20, 77);
+    --heading-span-color: rgb(52, 161, 205);
+    --heading-span-color-dark: rgba(52, 162, 205, 0.692);
+    --primary-button-color: rgb(19, 15, 73);
+    --font-color: rgb(146, 145, 156);
+    --bookmark-fill-color: rgb(255, 165, 0);
+    --construct-fill-color: rgb(241, 178, 188);
+    --school-fill-color: rgb(189, 71, 189);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    color: var(--font-color);
+    font-weight: normal;
+}
+
+/* li {
+    
+} */
+
+.header {
+    width: 100%;
+    height: 50px;
+    padding-bottom: 1.3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-items {
+    width: 40%; 
+    margin: 0 auto;
+    padding: 1.4rem;
+    
+}
+
+.nav-item{
+    display: inline-block;
+    list-style: none;
+    font-size: .8rem;
+    padding-left: 2rem;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    transition: all .2s;
+}
+
+.nav-item a:hover {
+    border-bottom: .8px solid var(--heading-span-color);
+    padding-bottom: .2rem;
+    color: var(--heading-span-color);
+
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--heading-span-color);
+    padding: 5px 1rem;
+    color:rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.active a {
+    color:rgb(255, 255, 255)
+}
+
+.active a:hover {
+    color: rgb(255, 255, 255);
+    background-color: var(--heading-span-color-dark);
+    border-bottom: none;
+}
+
+/* ################## */
+/* MAIN SECTION*/
+/* ################## */
+main {
+    padding: 0 5rem;
+}
+.main {
+    margin-top: 5rem;
+    display: flex;
+}
+
+.heading-container {
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.primary-heading {
+    font-size: 2.4rem;
+    display: inline-block;
+    width: 60%;
+    font-weight: 400;
+    color: var(--primary-heading-color);
+}
+
+.primary-heading__span {
+    color: var(--heading-span-color);
+    font-size: 2.8rem;
+}
+
+.about-me,
+.diploma-goal {
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.about-me {
+    margin: 2rem 0;
+}
+
+.image-container__img {
+    width: 65%;
+    height: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    /* justify-items: flex-end; */
+}
+
+/* ################ */
+/* My Education Section */
+/* ################ */
+.education-section,
+.contact-section {
+    padding: 6rem 0;
+}
+
+.secondary-heading {
+    font-size: 2.2rem;
+    color: var(--heading-span-color);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+ion-icon {
+    font-size: 18px;
+    margin-right: .5rem;
+    color:rgb(127, 255, 212);
+}
+
+.bookmarks {
+    fill: var(--bookmark-fill-color);
+}
+
+.construct {
+    fill: var(--construct-fill-color);
+}
+
+.school {
+    fill: var(--school-fill-color);
+}
+
+/* ################ */
+/* Job Experience Section */
+/* ################ */
+
+.job-experience {
+    margin-bottom: 4rem;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.education-container:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.education:not(:last-child) {
+    margin-right: 4rem;
+}
+
+/* Check back */
+/* .mg-left {
+    margin-left: 10px;
+} */
+
+.tertiary-heading {
+    color: var(--primary-heading-color);
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.education-details {
+    font-size: .9rem;
+    width: 80%;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+

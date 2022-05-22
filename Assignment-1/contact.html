@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <title>Contact Page</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-items">
+            <ul>
+                <li class="nav-item"><a href="index.html" >About Me</a></li>
+                <li class="nav-item"><a href="#contact" >Contact</a></li>
+                <li class="nav-item"><a href="register.html" >Register</a></li>
+                <li class="nav-item active"><a href="login.html" >Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Contact Form -->
+        <section class="contact-section" id="contact">
+            <h2 class="secondary-heading">Contact Me</h2>
+            <form action="" class="contact">
+                <!-- <h3 class="tertiary-heading tertiary-heading__contact">Contact Me</h3> -->
+                <input type="text" name="name" id="name" class="contact__input" placeholder="Name" required>
+                <input type="email" name="email" id="email" class="contact__input" placeholder="Email" required>
+                <textarea name="message" id="message" cols="30" rows="10" class="contact__input" placeholder="Message" required></textarea>
+
+                <!-- DataList -->
+                <label for="Priority">Choose Priority:</label>
+                <input list="priority-list" id="priority" name="priority" class="contact__input" required />
+
+                <datalist id="priority-list">
+                    <option value="Normal">
+                    <option value="Important">
+                    <option value="Critical">
+                    <!-- <option value="Strawberry">
+                    <option value="Vanilla"> -->
+                </datalist>
+
+                <div class="contact__btn">
+                    <button type="submit" class="contact__input-btn">Message me</button>
+
+                </div>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

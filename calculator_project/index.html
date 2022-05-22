@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator UI - Table format</title>
+
+    <!-- Open Sans Fonts from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Linking External CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <main>
+        <div class="calculator-wrapper">
+            <form action="" class="calculator-form">
+                <input type="text" name="input-field" class="calculator-form__input" placeholder="Enter digits here">
+                <label for="input-field" class="calculator-form__label">1337</label>
+            </form>
+
+            <!-- Buttons and Operators using Tables -->
+            <table>
+                <thead>
+                    <tr>
+                        <th class="special-operator">AC</th>
+                        <th class="special-operator">+/-</th>
+                        <th class="special-operator">%</th>
+                        <th class="math-operator">/</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td class="math-operator">x</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="math-operator">&#8212;</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td class="math-operator">+</td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td>0</td>
+                            <td>.</td>
+                            <td>e</td>
+                            <td class="math-operator">=</td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>
